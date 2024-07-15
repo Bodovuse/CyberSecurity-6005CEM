@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Avalible Files</h1>
+<body>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>FileName</th>
+    </tr>
+    {% for files in upload %}
+    <tr>
+        <td>{{upload['id']}}</td>
+        <td>{{upload['filename']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+
+{% endblock %}

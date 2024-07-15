@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<body>
+    <h1>Authentication Page</h1>
+    <div class = "code">
+        <img class="qr" src=" {{url_for('static', filename='image.jpg')}}" alt="qrcode"/>
+    </div>
+
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.inputCode }}
+        {{ form.submit }}
+    </form>
+</body>
+
+{% endblock %}
